@@ -25,6 +25,11 @@ function fetchRandomImage(){
       </div>`
    }
 
+   // handle error
+   xhrRequest.onerror = function() {
+      console.log("Request failed !! ");
+   }
+
    // initialise the request
    xhrRequest.open('get', 'https://dog.ceo/api/breeds/image/random', true)
 
