@@ -9,6 +9,33 @@ body{
    font-size: 20px;
 }
 
+/**
+* ! style rule for buttons
+**/
+a{
+   display: inline-block;
+   background-color: rgba(13, 235, 161, 0.397);
+   padding: 10px;
+   border-radius: 5px;
+   text-decoration: none;
+   text-align: center;
+   margin: 10px 10px;
+}
+
+#fetch-image {
+   display: block;
+   padding: 10px;
+   background-color: rgb(216, 205, 205);
+   border: none;
+   border-radius: 5px;
+   font-size: 20px;
+   cursor: pointer;
+   margin: 10px 10px;
+}
+
+/**
+* ! style rules for image card container
+**/
 #image-container {
    display: flex;
    flex-direction: column;
@@ -17,6 +44,9 @@ body{
    gap:30px;
 }
 
+/**
+* ! style rules for image card
+**/
 #card {
    display: flex;
    flex-direction: row;
