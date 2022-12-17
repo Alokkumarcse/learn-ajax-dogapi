@@ -1,6 +1,6 @@
-let imageContainer = document.getElementById('image-container');
-let image = document.getElementById('image');
-let fetchImage = document.getElementById('fetch-image');
+let imageContainer = document.getElementById('image-container'),
+    image = document.getElementById('image'),
+    fetchImage = document.getElementById('fetch-image');
 
 // making an api call to get an image
 function fetchRandomImage(){
