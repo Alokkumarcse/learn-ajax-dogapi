@@ -2,18 +2,18 @@ let imageContainer = document.getElementById('image-container'),
     image = document.getElementById('image'),
     fetchImage = document.getElementById('fetch-image');
 
-// making an api call to get an image
+// callback function make an api call to get an image
 function fetchRandomImage(){
    //create new object to make request
    let xhrRequest =  new XMLHttpRequest();
 
    // Response handler, when get response from server process the response
    xhrRequest.onload = function(){
-      console.log(xhrRequest.response);
       var responseJson = JSON.parse(xhrRequest.response);
       var imageUrl = responseJson.message;
       // adding fetched image into image container one by one
-      imageContainer.innerHTML += `<div id="card">
+      imageContainer.innerHTML += `
+      <div id="card">
          <div class="left">
             <img src=${imageUrl} alt="" height="200px" width="200px">
          </div>
